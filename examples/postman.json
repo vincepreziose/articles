@@ -1,0 +1,102 @@
+{
+	"id": "01a2a032-ed81-4fc7-ba70-fe4f78c99ce7",
+	"name": "articles",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [],
+	"folders_order": [
+		"ca370d35-1ae7-43ca-b0c6-39050877aa57"
+	],
+	"protocolProfileBehavior": {},
+	"folders": [
+		{
+			"id": "ca370d35-1ae7-43ca-b0c6-39050877aa57",
+			"name": "users",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "01a2a032-ed81-4fc7-ba70-fe4f78c99ce7",
+			"folder": null,
+			"order": [
+				"1931c3aa-5575-42db-84cd-f1d82b31afbd",
+				"d5fcdf93-0b19-4524-9c16-791f3bed7c0b",
+				"40526607-827c-41b0-97b5-411c84a11186"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"requests": [
+		{
+			"id": "1931c3aa-5575-42db-84cd-f1d82b31afbd",
+			"name": "create",
+			"url": "http://localhost:8000/api/users/create",
+			"description": "Register a new user.",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "ca370d35-1ae7-43ca-b0c6-39050877aa57",
+			"rawModeData": "{\n    \"name\": \"vinrock\",\n    \"email\": \"vinrock@test.com\",\n    \"password\": \"Betamax12\",\n    \"password_confirmation\": \"Betamax12\"\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "40526607-827c-41b0-97b5-411c84a11186",
+			"name": "update",
+			"url": "http://localhost:8000/api/users/update",
+			"description": "Register a new user.",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "ca370d35-1ae7-43ca-b0c6-39050877aa57",
+			"rawModeData": "{\n    \"name\": \"vinrock\",\n    \"email\": \"vinrock@test.com\",\n    \"password\": \"Betamax12\"\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "d5fcdf93-0b19-4524-9c16-791f3bed7c0b",
+			"name": "login",
+			"url": "http://localhost:8000/api/users/login",
+			"description": "Register a new user.",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "ca370d35-1ae7-43ca-b0c6-39050877aa57",
+			"rawModeData": "{\n    \"email\": \"vinrock@test.com\",\n    \"password\": \"Betamax12\"\n}",
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
