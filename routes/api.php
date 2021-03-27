@@ -15,4 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('register', [AuthController::class, 'register']);
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'users'
+
+], function ($router) {
+    Route::post('/login', [AuthController::class, 'login']);
+    Route::post('/create', [AuthController::class, 'create']);
+    Route::put('/update', [AuthController::class, 'update']);
+    Route::post('/logout', [AuthController::class, 'logout']);
+});
